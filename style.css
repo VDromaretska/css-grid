@@ -1,0 +1,43 @@
+html {
+    border: 1px solid black;
+}
+
+
+
+.cell {
+    border: 2px dashed blue;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 40px;
+
+}
+    .featureBlock {
+        border: 2px dashed blue;
+        display: grid;
+        grid-area: horizontal;
+        align-self: stretch;
+        font-size: 10px;
+    }
+
+    .verticalBlock {
+        border: 2px dashed blue;
+        display: grid;
+        grid-area: vertical;
+        font-size: small;
+        place-items: center;
+        writing-mode: vertical-lr;
+    }
+
+    .mainGrid {
+        border: 1px solid purple;
+        margin: auto;
+        
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+            "vertical . . ."
+            "vertical . horizontal horizontal"
+            ". . . .";
+
+    }
